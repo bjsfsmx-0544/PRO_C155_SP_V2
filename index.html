@@ -5,7 +5,7 @@
     <script src="https://cdn.rawgit.com/zcanter/aframe-gradient-sky/master/dist/gradientsky.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
 
-    <!--COMPONENT FILES -->
+    <!-- Archivos de los componentes -->
     <script src="./js/Fish.js"></script>
     <script src="./js/Treasure.js"></script>
     <script src="./js/Rotation.js"></script>
@@ -13,7 +13,7 @@
   </head>
   <body>
     <a-scene physics="debug:false">
-      <!---Assets-->
+      <!--- Recursos multimedia -->
       <a-a-assets>
         <a-asset-item id="island" src="assets/island/scene.gltf"></a-asset-item>
 
@@ -33,7 +33,7 @@
         ></a-asset-item>
       </a-a-assets>
 
-      <!-- Sky -->
+      <!-- Cielo -->
       <a-sky
         geometry="primitive: sphere;"
         material="shader: gradient; bottomColor: #00009e; topColor:109 205 227;offset: 0.0001;"
@@ -42,16 +42,16 @@
         side="double"
         animation="property: rotation; to: 0 300 0; easing:linear; loop: true; dur: 500000"
       >
-        <!------------------------------------GLTF Models------------------------------------------>
+        <!------------------------------------ Modelos GLTF ------------------------------------------>
 
-        <!--Island-->
+        <!-- Isla -->
         <a-entity
           gltf-model="#island"
           scale="1 1 1"
           position="0 -15 -40"
         ></a-entity>
 
-        <!--Trasures-->
+        <!-- Tesoros -->
         <a-entity
           gltf-model="#treasure"
           scale="15 15 15"
@@ -73,13 +73,13 @@
           rotation="0 90 0"
         ></a-entity>
 
-        <!--Fish Entity-->
+        <!-- Entidad del pez -->
         <a-entity position="0 0 0" id="fishModels" fish> </a-entity>
 
-        <!--Treasure Entity-->
+        <!-- Entidad del tesoro -->
         <a-entity position="0 0 0" id="treasureCoins" coins> </a-entity>
 
-        <!--Turtule-->
+        <!-- Tortuga -->
         <a-entity
           gltf-model="#turtle"
           scale="0.005 0.005 0.005"
@@ -88,7 +88,7 @@
         ></a-entity>
       </a-sky>
 
-      <!--Scuba Driver-->
+      <!-- Buzo -->
       <a-entity
         gltf-model="#scuba_driver"
         scale="0.1 0.1 0.1"
@@ -113,7 +113,7 @@
 
       <a-cylinder color="#00009e" radius="100" opacity="0.2"></a-cylinder>
 
-      <!-- CAMERA -->
+      <!-- Cámara -->
       <a-entity
         camera="active: true"
         look-controls
