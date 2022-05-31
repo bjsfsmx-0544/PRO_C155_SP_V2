@@ -32,13 +32,13 @@ AFRAME.registerComponent("fish", {
 
     fishEl.setAttribute("animation-mixer", {});
 
-    //set the static body attribute of physics system 
+    // Establecer el atributo del cuerpo estático en el sistema físico
     fishEl.setAttribute("static-body", {
       shape: "sphere",
       sphereRadius: 2
     });
 
-     //set the game play attribute
+     // Establecer el atributi 'game-play'
      fishEl.setAttribute("game-play", {
       elementId: `#${id}`,
     });
