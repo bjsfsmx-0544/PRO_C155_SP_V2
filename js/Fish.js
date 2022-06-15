@@ -38,7 +38,7 @@ AFRAME.registerComponent("fish", {
       sphereRadius: 2
     });
 
-     // Establecer el atributi 'game-play'
+     // Establecer el atributo 'game-play'
      fishEl.setAttribute("game-play", {
       elementId: `#${id}`,
     });
